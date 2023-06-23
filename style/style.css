@@ -1,0 +1,147 @@
+body {
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('../assets/bg-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+:root 
+{
+    --primary-color: #ffbd59;
+    --secondary-color: #252525;
+    --tertiary-color: #e6e6e621;
+    --white: #f2f2f2;
+}
+
+
+.container
+{
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vh;
+}
+
+ /* Navbar styles  */
+.navbar
+{
+    background-color: transparent;
+    width: 196.2%;
+    height: 2.5rem;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    display: block;
+}
+
+.navbar > li
+{
+    float: left;
+}
+
+li a
+{
+    display: block;
+}
+
+.navbar-info
+{
+    width: 200;
+}
+
+.navbar-info {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul
+{
+    display: flex;
+    flex-direction: row;
+    display: inline;
+    list-style: none;
+}
+li
+{
+    padding: 10px 0;
+}
+a
+{
+    text-decoration: none;
+    color: var(--secondary-color) ;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+.navbar li ul a
+{
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;    
+}
+.navbar li ul
+{
+    display: none;
+    position: absolute;
+
+}
+.navbar li:hover >ul
+{
+    display: block;
+}
+.navbar:hover {
+    background-color: var(--secondary-color);
+    transition: all .3s ease;
+}
+
+.navbar:hover a {
+    color: var(--white) ;
+}
+
+.navbar:hover li ul
+{
+    background-color: var(--secondary-color);
+    transition: all .1s ease;
+
+}
+
+/* Main styles */
+
+.main-container
+{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+}
+.main
+{
+    padding-top: 10rem;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+.orange-text
+{
+    color: var(--primary-color);
+}
+
+.shoe-img
+{
+    width: 32rem;
+    height: 34rem;
+    position: absolute;
+    top: 2%;
+    right: -8rem;
+    z-index: -1;
+}
+
